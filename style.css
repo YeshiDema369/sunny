@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "Work Sans";
+  src: url("/resources/fonts/WorkSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/resources/fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/resources/fonts/Montserrat-Medium.ttf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Distressed&family=Sono&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+ul {
+  list-style: square inside url("");
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-shadow: 2px 2px 5px rgb(141, 62, 112);
+}
+li:hover {
+  background-color: blueviolet;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  /* background-image: url(https://thumbs.gfycat.com/WatchfulUnripeBull-size_restricted.gif);
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+/* Website banner at the top */
+div#banner {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+  text-align: center;
+}
+
+/* Banner at the top of the webpage */
+div#banner-img-container {
+  width: 140px;
+  height: 150px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+/* Image inside the banner */
+img#banner-pic {
+  width: 100%;
+  border-radius: 50px;
+  object-fit: contain;
+}
+
+/* heading element used for the website title */
+h2 {
+  /* font-family: "Montserrat", sans-serif; */
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  text-shadow: 2px 2px 5px red;
+  font-family: "Rubik Distressed";
+}
+h2:hover {
+  color: white;
+  background-color: cornflowerblue;
+  border-radius: 45%;
+}
+
+/* heading element used for the title of each row/section under the banner */
+
+h2 {
+  margin-bottom: 50px;
+  /* font-family: "Montserrat", sans-serif; */
+  font-size: 28px;
+  /* font-family: "Sono", sans-serif; */
+  font-family: "Rubik Distressed";
+}
+
+/* heading element used for the website slogan/tagline in the banner */
+h3 {
+  color: rgb(0, 0, 0);
+  padding: 1rem 5rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* styling for all the paragraph elements  */
+p {
+  line-height: 1.2;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* styling for all the rows */
+div.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 5%;
+}
+
+/* styling for the columns inside each row */
+div.column {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+img {
+  width: 100%;
+  height: 150%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* styling for odd-numbered rows */
+.row:nth-child(odd) {
+  background-color: lightpink;
+}
+
+/* styling for even-numbered rows */
+.row:nth-child(even) {
+  background-color: lightblue;
+  flex-direction: row-reverse;
+  color: #ffffff;
+}
+
+div.text-column {
+  flex: 3;
+}
+
+div.img-column {
+  flex: 1;
+}
